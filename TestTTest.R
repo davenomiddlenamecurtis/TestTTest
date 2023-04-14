@@ -1,9 +1,20 @@
 #!/share/apps/R-3.6.1/bin/Rscript
+
+# Provide TestName as first argument on the command line (or set it below)
+# An input file should have name TestName.input.txt and tab-separated columns:
+# Dist	NSims	NCont	NCase	ContMean	CaseMean	ContVar	CaseVar
+# Each row defines one set of simulations. 
+# The Dist variable must be either Normal or Poisson
+# If Poisson is chosen the ContVar and CaseVar variables are ignored
+# See example input files provided in the git repository
+
+# David Curtis 2023 d.curtis@ucl.ac.uk
+
 library(ggplot2)
 
 wd="/Users/dave_000/OneDrive/sharedseq/TestTTest"
 wd="/Users/Dave/OneDrive/sharedseq/TestTTest"
-setwd(wd)
+# setwd(wd)
 
 args = commandArgs(trailingOnly=TRUE)
 if (length(args)!=1) {
