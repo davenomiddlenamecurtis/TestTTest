@@ -1,9 +1,0 @@
-Dist	NSims	NCont	NCase	ContMean	CaseMean	ContVar	CaseVar
-Poisson	1000	900	100	0.05	0.05	0.05	0.05
-Poisson	1000	500	500	0.05	0.05	0.05	0.05
-Gaussian	1000	900	100	0.05	0.05	0.05	0.05
-Gaussian	1000	500	500	0.05	0.05	0.05	0.05
-Poisson	100	19700	300	0.01	0.01	0.01	0.01
-Gaussian	100	19700	300	0.01	0.01	0.01	0.01
-Poisson	100	197000	3000	0.001	0.001	0.001	0.001
-
